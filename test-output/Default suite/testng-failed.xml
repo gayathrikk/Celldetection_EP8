@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="Sanity.Cell_annotation.Testing">
+        <methods>
+          <include name="Rabies"/>
+          <include name="afterTest"/>
+          <include name="centroidDetection"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- Sanity.Cell_annotation.Testing -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
