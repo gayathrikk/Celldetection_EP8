@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Default_suite" class="navigator-link">
-              <span class="suite-name border-passed">Default suite</span>
+              <span class="suite-name border-failed">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,7 +93,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">9 methods,   9 passed</span>
+                    <span class="method-stats">4 methods, 1 failed,   3 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Default_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="Sanity.Cell_annotation.apollo6" class="method navigator-link" hash-for-method="Tileloading">Tileloading</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Default_suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,47 +118,17 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Sanity.Cell_annotation.Testing" class="method navigator-link" hash-for-method="Annotation">Annotation</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="Sanity.Cell_annotation.apollo6" class="method navigator-link" hash-for-method="cellannotation">cellannotation</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Sanity.Cell_annotation.Testing" class="method navigator-link" hash-for-method="Rabies">Rabies</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="Sanity.Cell_annotation.apollo6" class="method navigator-link" hash-for-method="login">login</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Sanity.Cell_annotation.Testing" class="method navigator-link" hash-for-method="Tileloading">Tileloading</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Sanity.Cell_annotation.Testing" class="method navigator-link" hash-for-method="cellannotation">cellannotation</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Sanity.Cell_annotation.Testing" class="method navigator-link" hash-for-method="celldetection">celldetection</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Sanity.Cell_annotation.Testing" class="method navigator-link" hash-for-method="centroidDetection">centroidDetection</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Sanity.Cell_annotation.Testing" class="method navigator-link" hash-for-method="login">login</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Sanity.Cell_annotation.Testing" class="method navigator-link" hash-for-method="save">save</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Sanity.Cell_annotation.Testing" class="method navigator-link" hash-for-method="series_set">series_set</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="Sanity.Cell_annotation.apollo6" class="method navigator-link" hash-for-method="series_set">series_set</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -159,33 +143,65 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-passed">
+          <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">Sanity.Cell_annotation.Testing</span>
+              <img src="failed.png"/>
+              <span class="class-name">Sanity.Cell_annotation.apollo6</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="Annotation">
-                  </a> <!-- Annotation -->
-                  <span class="method-name">Annotation</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="Rabies">
-                  </a> <!-- Rabies -->
-                  <span class="method-name">Rabies</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="Tileloading">
                   </a> <!-- Tileloading -->
                   <span class="method-name">Tileloading</span>
+                  <div class="stack-trace">java.lang.AssertionError: API request to the tile loading failed expected [200] but found [404]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:907)
+	at Sanity.Cell_annotation.apollo6.tileloading_API(apollo6.java:544)
+	at Sanity.Cell_annotation.apollo6.Tileloading(apollo6.java:218)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-failed -->
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Sanity.Cell_annotation.apollo6</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
                   <a name="cellannotation">
@@ -195,30 +211,9 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="celldetection">
-                  </a> <!-- celldetection -->
-                  <span class="method-name">celldetection</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="centroidDetection">
-                  </a> <!-- centroidDetection -->
-                  <span class="method-name">centroidDetection</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="login">
                   </a> <!-- login -->
                   <span class="method-name">login</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="save">
-                  </a> <!-- save -->
-                  <span class="method-name">save</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -233,7 +228,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/tmp/testng-eclipse--101198825/testng-customsuite.xml</span>
+            <span class="header-content">/tmp/testng-eclipse-604332675/testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -242,7 +237,7 @@
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;Sanity.Cell_annotation.Testing&quot;/&gt;
+      &lt;class name=&quot;Sanity.Cell_annotation.apollo6&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -282,48 +277,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(9);
+data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'celldetection')
-data.setCell(0, 2, 'Sanity.Cell_annotation.Testing')
-data.setCell(0, 3, 23048);
+data.setCell(0, 1, 'Tileloading')
+data.setCell(0, 2, 'Sanity.Cell_annotation.apollo6')
+data.setCell(0, 3, 16988);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'centroidDetection')
-data.setCell(1, 2, 'Sanity.Cell_annotation.Testing')
-data.setCell(1, 3, 17036);
+data.setCell(1, 1, 'series_set')
+data.setCell(1, 2, 'Sanity.Cell_annotation.apollo6')
+data.setCell(1, 3, 13628);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'Rabies')
-data.setCell(2, 2, 'Sanity.Cell_annotation.Testing')
-data.setCell(2, 3, 17032);
+data.setCell(2, 1, 'login')
+data.setCell(2, 2, 'Sanity.Cell_annotation.apollo6')
+data.setCell(2, 3, 9437);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'series_set')
-data.setCell(3, 2, 'Sanity.Cell_annotation.Testing')
-data.setCell(3, 3, 14198);
-data.setCell(4, 0, 4)
-data.setCell(4, 1, 'Tileloading')
-data.setCell(4, 2, 'Sanity.Cell_annotation.Testing')
-data.setCell(4, 3, 12598);
-data.setCell(5, 0, 5)
-data.setCell(5, 1, 'Annotation')
-data.setCell(5, 2, 'Sanity.Cell_annotation.Testing')
-data.setCell(5, 3, 12023);
-data.setCell(6, 0, 6)
-data.setCell(6, 1, 'login')
-data.setCell(6, 2, 'Sanity.Cell_annotation.Testing')
-data.setCell(6, 3, 11156);
-data.setCell(7, 0, 7)
-data.setCell(7, 1, 'save')
-data.setCell(7, 2, 'Sanity.Cell_annotation.Testing')
-data.setCell(7, 3, 9030);
-data.setCell(8, 0, 8)
-data.setCell(8, 1, 'cellannotation')
-data.setCell(8, 2, 'Sanity.Cell_annotation.Testing')
-data.setCell(8, 3, 3103);
+data.setCell(3, 1, 'cellannotation')
+data.setCell(3, 2, 'Sanity.Cell_annotation.apollo6')
+data.setCell(3, 3, 3219);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 43 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -349,50 +324,32 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">Sanity.Cell_annotation.Testing</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">Sanity.Cell_annotation.apollo6</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">setup</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">login</span>
-                <span class="method-start">1456 ms</span>
+                <span class="method-start">831 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">series_set</span>
-                <span class="method-start">12615 ms</span>
+                <span class="method-start">10271 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">cellannotation</span>
-                <span class="method-start">26814 ms</span>
+                <span class="method-start">23900 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">Tileloading</span>
-                <span class="method-start">29919 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">celldetection</span>
-                <span class="method-start">42519 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">centroidDetection</span>
-                <span class="method-start">65569 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">Rabies</span>
-                <span class="method-start">82605 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">Annotation</span>
-                <span class="method-start">99638 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">save</span>
-                <span class="method-start">111662 ms</span>
+                <span class="method-start">27120 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">afterTest</span>
-                <span class="method-start">120693 ms</span>
+                <span class="method-start">44110 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
