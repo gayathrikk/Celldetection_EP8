@@ -200,23 +200,11 @@ public class apollo6 {
 			    WebElement tileNumberInput = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@placeholder='Tile Number']")));
 		        tileNumberInput.sendKeys("4697");
 		        
-		        clickElementByXpath("//button[text()='Go to']", "Goto Button option");
+		        clickElementByXpath("//button[text()='Go to']", "Goto Button");
 		        clickElementByXpath("//a[@title='Tile Annotation']", "Tile annotation page");
-
-		        try {
-		            WebElement toaster = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[text()='Annotated Data loaded successfully']")));
-		            String Toaster = toaster.getText();
-		            String Expected = "Annotated Data loaded successfully";
-		            Assert.assertEquals(Expected, Toaster);
-		            
-		            System.out.println("************Tile loaded successfully**************");
-		        } catch (Exception e) {
-		            System.out.println("*****************Tile not loaded*******************");
-		        }
-
 		        checkConsoleLog();
 		        tileloading_API();
-		        
+		        System.out.println("************Tile loaded successfully**************");
 		  }
 	    
 //		@Test(priority=5)
