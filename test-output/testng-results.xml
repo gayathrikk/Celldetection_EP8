@@ -1,77 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-10-20T16:38:02 IST" name="Default suite" finished-at="2023-10-20T16:38:47 IST" duration-ms="44218">
+  <suite started-at="2023-10-23T09:55:45 IST" name="Default suite" finished-at="2023-10-23T09:56:39 IST" duration-ms="53756">
     <groups>
     </groups>
-    <test started-at="2023-10-20T16:38:02 IST" name="Default test" finished-at="2023-10-20T16:38:47 IST" duration-ms="44218">
+    <test started-at="2023-10-23T09:55:45 IST" name="Default test" finished-at="2023-10-23T09:56:39 IST" duration-ms="53756">
       <class name="Sanity.Cell_annotation.apollo6">
-        <test-method is-config="true" signature="setup()[pri:0, instance:Sanity.Cell_annotation.apollo6@48f278eb]" started-at="2023-10-20T16:38:02 IST" name="setup" finished-at="2023-10-20T16:38:03 IST" duration-ms="813" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:Sanity.Cell_annotation.apollo6@48f278eb]" started-at="2023-10-23T09:55:45 IST" name="setup" finished-at="2023-10-23T09:55:46 IST" duration-ms="1019" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="login()[pri:1, instance:Sanity.Cell_annotation.apollo6@48f278eb]" started-at="2023-10-20T16:38:03 IST" name="login" finished-at="2023-10-20T16:38:13 IST" duration-ms="9437" status="PASS">
+        <test-method signature="login()[pri:1, instance:Sanity.Cell_annotation.apollo6@48f278eb]" started-at="2023-10-23T09:55:46 IST" name="login" finished-at="2023-10-23T09:55:57 IST" duration-ms="11374" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="series_set()[pri:2, instance:Sanity.Cell_annotation.apollo6@48f278eb]" started-at="2023-10-20T16:38:13 IST" name="series_set" finished-at="2023-10-20T16:38:26 IST" duration-ms="13628" status="PASS">
+        <test-method signature="series_set()[pri:2, instance:Sanity.Cell_annotation.apollo6@48f278eb]" started-at="2023-10-23T09:55:57 IST" name="series_set" finished-at="2023-10-23T09:56:13 IST" duration-ms="16160" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- series_set -->
-        <test-method signature="cellannotation()[pri:3, instance:Sanity.Cell_annotation.apollo6@48f278eb]" started-at="2023-10-20T16:38:26 IST" name="cellannotation" finished-at="2023-10-20T16:38:30 IST" duration-ms="3219" status="PASS">
+        <test-method signature="cellannotation()[pri:3, instance:Sanity.Cell_annotation.apollo6@48f278eb]" started-at="2023-10-23T09:56:13 IST" name="cellannotation" finished-at="2023-10-23T09:56:17 IST" duration-ms="3424" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cellannotation -->
-        <test-method signature="Tileloading()[pri:4, instance:Sanity.Cell_annotation.apollo6@48f278eb]" started-at="2023-10-20T16:38:30 IST" name="Tileloading" finished-at="2023-10-20T16:38:47 IST" duration-ms="16988" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[API request to the tile loading failed expected [200] but found [404]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: API request to the tile loading failed expected [200] but found [404]
-at org.testng.Assert.fail(Assert.java:99)
-at org.testng.Assert.failNotEquals(Assert.java:1037)
-at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-at org.testng.Assert.assertEquals(Assert.java:122)
-at org.testng.Assert.assertEquals(Assert.java:907)
-at Sanity.Cell_annotation.apollo6.tileloading_API(apollo6.java:544)
-at Sanity.Cell_annotation.apollo6.Tileloading(apollo6.java:218)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method signature="Tileloading()[pri:4, instance:Sanity.Cell_annotation.apollo6@48f278eb]" started-at="2023-10-23T09:56:17 IST" name="Tileloading" finished-at="2023-10-23T09:56:38 IST" duration-ms="21650" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Tileloading -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:Sanity.Cell_annotation.apollo6@48f278eb]" started-at="2023-10-20T16:38:47 IST" name="afterTest" finished-at="2023-10-20T16:38:47 IST" duration-ms="104" status="PASS">
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:Sanity.Cell_annotation.apollo6@48f278eb]" started-at="2023-10-23T09:56:38 IST" name="afterTest" finished-at="2023-10-23T09:56:39 IST" duration-ms="102" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->

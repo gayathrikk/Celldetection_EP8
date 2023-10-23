@@ -534,7 +534,7 @@ public class apollo6 {
 		    		    .auth()
 		    		    .basic("admin", "admin")
 		    		    .when()
-		    		    .get("https://ap6.humanbrain.in//iipsrv1/fcgi-bin/iipsrv.fcgi?FIF=/apollo6/storageIIT/humanbrain/analytics/223/NISL/B_223_FB72-SL_86-ST_NISL-SE_256_lossless.jp2&GAM=1.5&WID=512&RGN=0.6028104823395366,0.32918988426918133,0.009722749715153817,0.007315330761537363&CVT=jpeg");
+		    		    .get("https://ap6.humanbrain.in//iipsrv/fcgi-bin/iipsrv.fcgi?FIF=/apollo6/storageIIT/humanbrain/analytics/223/NISL/B_223_FB72-SL_86-ST_NISL-SE_256_lossless.jp2&GAM=1.5&WID=512&RGN=0.5055829851879985,0.32918988426918133,0.009722749715153817,0.007315330761537363&CVT=jpeg");
 		      int statusCode1 = response1.getStatusCode();
 		      if (statusCode1 == 200) {
 		          System.out.println("API request to the tile loading passed. Status code: " + statusCode1);
