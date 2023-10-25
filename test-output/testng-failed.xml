@@ -5,13 +5,8 @@
     <classes>
       <class name="Sanity.Cell_annotation.Testing">
         <methods>
-          <include name="Rabies"/>
           <include name="celldetection"/>
-          <include name="Tileloading"/>
           <include name="afterTest"/>
-          <include name="centroidDetection"/>
-          <include name="login" invocation-numbers="0"/>
-          <include name="save"/>
           <include name="setup"/>
         </methods>
       </class> <!-- Sanity.Cell_annotation.Testing -->
