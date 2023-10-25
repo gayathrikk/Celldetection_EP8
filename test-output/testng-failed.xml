@@ -3,13 +3,18 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Sanity.Cell_annotation.apollo6">
+      <class name="Sanity.Cell_annotation.Testing">
         <methods>
-          <include name="setup"/>
+          <include name="Rabies"/>
+          <include name="celldetection"/>
           <include name="Tileloading"/>
           <include name="afterTest"/>
+          <include name="centroidDetection"/>
+          <include name="login" invocation-numbers="0"/>
+          <include name="save"/>
+          <include name="setup"/>
         </methods>
-      </class> <!-- Sanity.Cell_annotation.apollo6 -->
+      </class> <!-- Sanity.Cell_annotation.Testing -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

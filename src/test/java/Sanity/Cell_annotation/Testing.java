@@ -213,6 +213,23 @@ public class Testing {
 		  }
 	    
 		@Test(priority=5)
+		public void celldetection() throws InterruptedException
+		{
+			driver.switchTo().defaultContent();
+			clickElementByXpath("(//select[@status='primary'])[2]", "Algorithym option"); 
+			clickElementByXpath("//option[text()=' CellDetection ']", "Cell Detection");
+	
+			  Thread.sleep(6000);
+			  WebElement toast2 = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//nb-toast//span[text()='Relearn']/following-sibling::div[@class='message']")));
+			  String actualFileName2 = toast2.getText();
+			  String expectedFileName2 = "Relearn success"; 
+			  Assert.assertEquals(expectedFileName2, actualFileName2);
+			  checkConsoleLog();
+			  Celldetection_API();
+			  System.out.println("****************EP1 firstpass Relearn success*****************");
+			  Thread.sleep(5000);
+		}
+		@Test(priority=6)
 
 		  public void centroidDetection() throws InterruptedException {
 			
@@ -231,23 +248,6 @@ public class Testing {
 			  Thread.sleep(5000);
 
 		  }
-		@Test(priority=6)
-		public void celldetection() throws InterruptedException
-		{
-			driver.switchTo().defaultContent();
-			clickElementByXpath("(//select[@status='primary'])[2]", "Algorithym option"); 
-			clickElementByXpath("//option[text()=' CellDetection ']", "Cell Detection");
-	
-			  Thread.sleep(6000);
-			  WebElement toast2 = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//nb-toast//span[text()='Relearn']/following-sibling::div[@class='message']")));
-			  String actualFileName2 = toast2.getText();
-			  String expectedFileName2 = "Relearn success"; 
-			  Assert.assertEquals(expectedFileName2, actualFileName2);
-			  checkConsoleLog();
-			  Celldetection_API();
-			  System.out.println("****************EP1 firstpass Relearn success*****************");
-			  Thread.sleep(5000);
-		}
 
 		  @Test(priority=7)
 
