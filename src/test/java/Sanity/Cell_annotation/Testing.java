@@ -212,7 +212,7 @@ public class Testing {
 		        
 		  }
 	    
-		@Test(priority=5)
+		@Test(priority=6)
 		public void celldetection() throws InterruptedException
 		{
 			driver.switchTo().defaultContent();
@@ -229,7 +229,7 @@ public class Testing {
 			  System.out.println("****************EP1 firstpass Relearn success*****************");
 			  Thread.sleep(5000);
 		}
-		@Test(priority=6)
+		@Test(priority=5)
 
 		  public void centroidDetection() throws InterruptedException {
 			
