@@ -210,7 +210,7 @@ public class Testing {
 		        WebDriverWait wait = new WebDriverWait(driver, 60); // Wait for up to 60 seconds
 
 		        try {
-		            WebElement toaster = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[text()='Annotated Data loaded successfully']"));
+		            WebElement toaster = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[text()='Annotated Data loaded successfully']")));
 		            String Toaster = toaster.getText();
 		            String Expected = "Annotated Data loaded successfully";
 		            Assert.assertEquals(Expected, Toaster);
