@@ -10,6 +10,7 @@ import org.testng.Assert;
 import org.testng.AssertJUnit;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.AfterTest;
@@ -201,15 +202,23 @@ public class Testing {
 	    	    clickElementByXpath("(//nb-icon[@pack='nebular-essentials'])[6]", "Goto option");
 			    
 			    WebElement tileNumberInput = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@placeholder='Tile Number']")));
-		        tileNumberInput.sendKeys("860");
+		        tileNumberInput.sendKeys("5731");
 		        
 		        clickElementByXpath("//button[text()='Go to']", "Goto Button option");
 		        clickElementByXpath("//a[@title='Tile Annotation']", "Tile annotation page");
+		       
+		        WebDriverWait wait = new WebDriverWait(driver, 60); // Wait for up to 60 seconds
 
-		        WebElement toaster = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[text()='Annotated Data loaded successfully']")));
-		        String Toaster = toaster.getText();
-		        String Expected = "Annotated Data loaded successfully";
-		        Assert.assertEquals(Expected, Toaster);
+		        try {
+		            WebElement toaster = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[text()='Annotated Data loaded successfully']"));
+		            String Toaster = toaster.getText();
+		            String Expected = "Annotated Data loaded successfully";
+		            Assert.assertEquals(Expected, Toaster);
+		        } catch (TimeoutException e) {
+		            // The toaster did not appear within 1 minute; fail the test.
+		            Assert.fail("Toaster message did not appear within the expected time.");
+		        }
+
 		        checkConsoleLog();
 		        tileloading_API();
 		        System.out.println("************Tile loaded successfully**************");
