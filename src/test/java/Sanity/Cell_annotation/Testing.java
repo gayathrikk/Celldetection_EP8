@@ -301,6 +301,7 @@ public class Testing {
 			  driver.switchTo().defaultContent();
 			  clickElementByXpath("//a[@title='Actions']", "Action"); 
 			  clickElementByXpath("//a[@title='Save']", "save"); 
+			  Thread.sleep(2000);
 			 WebElement toast4 = driver.findElement(By.xpath("//nb-toast//span[text()='Save']/following-sibling::div[@class='message']"));
 			  String actualFileName4 = toast4.getText();
 			  String expectedFileName4 = "Saved Successfullly"; 
