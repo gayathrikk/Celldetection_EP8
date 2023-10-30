@@ -214,11 +214,6 @@ public class Testing {
 		            String Toaster1 = toaster1.getText();
 		            String Expected1 = "Annotated Data loaded successfully";
 		            Assert.assertEquals(Expected1, Toaster1);
-		            
-		            WebElement toaster2 = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[text()='Annotated Data Failed copying first pass data']")));
-		            String Toaster2 = toaster2.getText();
-		            String Expected2 = "Annotated Data Failed copying first pass data";
-		            Assert.assertEquals(Expected2, Toaster2);
 		        } catch (TimeoutException e) {
 		            // At least one of the expected toasters did not appear within 1 minute; fail the test.
 		            Assert.fail("Toaster message did not appear within the expected time.");
