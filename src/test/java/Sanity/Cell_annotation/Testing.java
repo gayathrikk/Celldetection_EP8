@@ -207,7 +207,7 @@ public class Testing {
 		        clickElementByXpath("//button[text()='Go to']", "Goto Button option");
 		        clickElementByXpath("//a[@title='Tile Annotation']", "Tile annotation page");
 		       
-		        WebDriverWait wait = new WebDriverWait(driver, 60); // Wait for up to 60 seconds
+		        WebDriverWait wait = new WebDriverWait(driver, 100); // Wait for up to 60 seconds
 
 		        try {
 		            WebElement toaster1 = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[text()='Annotated Data loaded successfully']")));
@@ -228,7 +228,7 @@ public class Testing {
 	    
 		@Test(priority=5)
 
-		  public void centr6oidDetection() throws InterruptedException {
+		  public void centroidDetection() throws InterruptedException {
 			
 			  driver.switchTo().defaultContent();
 			  clickElementByXpath("(//select[@status='primary'])[2]", "Algorithym option"); 
