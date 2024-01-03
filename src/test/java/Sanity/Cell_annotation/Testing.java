@@ -303,8 +303,8 @@ public class Testing {
 			  driver.switchTo().defaultContent();
 			  clickElementByXpath("//a[@title='Actions']", "Action"); 
 			  clickElementByXpath("//a[@title='Save']", "save"); 
-			  Thread.sleep(2000);
-			 WebElement toast4 = driver.findElement(By.xpath("//div[text()='Saved Successfullly']"));
+			  Thread.sleep(4000);
+		   	 WebElement toast4 = driver.findElement(By.xpath("//div[text()='Saved Successfullly']"));
 			  String actualFileName4 = toast4.getText();
 			  String expectedFileName4 = "Saved Successfullly"; 
 			  Assert.assertEquals(actualFileName4, expectedFileName4);
