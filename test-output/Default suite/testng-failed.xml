@@ -5,8 +5,8 @@
     <classes>
       <class name="Sanity.Cell_annotation.Testing">
         <methods>
-          <include name="celldetection"/>
           <include name="afterTest"/>
+          <include name="save"/>
           <include name="setup"/>
         </methods>
       </class> <!-- Sanity.Cell_annotation.Testing -->

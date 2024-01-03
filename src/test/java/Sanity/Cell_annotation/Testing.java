@@ -40,15 +40,16 @@ public class Testing {
 		
 	    @BeforeTest
 	    public void setup() throws Exception {
-	        DesiredCapabilities dc = DesiredCapabilities.chrome();
-	        URL url = new URL("http://172.12.20.118:5555/wd/hub");
-	        driver = new RemoteWebDriver(url, dc);
+	    	DesiredCapabilities dc = DesiredCapabilities.chrome();
+	    	URL url = new URL("http://172.20.23.7:5555/wd/hub/");
+	    	driver = new RemoteWebDriver(url, dc);
+
 	        wait = new WebDriverWait(driver, 10); // Adjust the timeout as needed
 	    }
 	    @Parameters("URL")
 	    @Test(priority = 1)
 	   public void login(@Optional("defaultURL") String URL) 
-	    //public void login() 
+	   //public void login() 
 	    {
 	   
 	    	driver.get(URL);
