@@ -303,7 +303,7 @@ public class Testing {
 			  driver.switchTo().defaultContent();
 			  clickElementByXpath("//a[@title='Actions']", "Action"); 
 			  clickElementByXpath("//a[@title='Save']", "save"); 
-			  Thread.sleep(4000);
+			  Thread.sleep(8000);
 		   	 WebElement toast4 = driver.findElement(By.xpath("//div[text()='Saved Successfullly']"));
 			  String actualFileName4 = toast4.getText();
 			  String expectedFileName4 = "Saved Successfullly"; 
