@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Sanity.Cell_annotation.Testing">
+      <class name="Sanity.Cell_annotation.CellDetection_EP8">
         <methods>
-          <include name="afterTest"/>
-          <include name="save"/>
           <include name="setup"/>
+          <include name="Login"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- Sanity.Cell_annotation.Testing -->
+      </class> <!-- Sanity.Cell_annotation.CellDetection_EP8 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

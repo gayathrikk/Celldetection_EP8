@@ -1,25 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-01-29T10:04:12 IST" name="Default suite" finished-at="2024-01-29T10:05:36 IST" duration-ms="84101">
+  <suite started-at="2024-02-13T10:35:00 IST" name="Default suite" finished-at="2024-02-13T10:36:39 IST" duration-ms="98744">
     <groups>
     </groups>
-    <test started-at="2024-01-29T10:04:12 IST" name="Default test" finished-at="2024-01-29T10:05:36 IST" duration-ms="84101">
+    <test started-at="2024-02-13T10:35:00 IST" name="Default test" finished-at="2024-02-13T10:36:39 IST" duration-ms="98744">
       <class name="Sanity.Cell_annotation.CellDetection_EP8">
-        <test-method is-config="true" signature="setup()[pri:0, instance:Sanity.Cell_annotation.CellDetection_EP8@611889f4]" started-at="2024-01-29T10:04:12 IST" name="setup" finished-at="2024-01-29T10:04:13 IST" duration-ms="651" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:Sanity.Cell_annotation.CellDetection_EP8@2f217633]" started-at="2024-02-13T10:35:00 IST" name="setup" finished-at="2024-02-13T10:35:01 IST" duration-ms="1338" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="Login()[pri:1, instance:Sanity.Cell_annotation.CellDetection_EP8@611889f4]" started-at="2024-01-29T10:04:13 IST" name="Login" finished-at="2024-01-29T10:04:37 IST" duration-ms="23911" status="PASS">
+        <test-method signature="Login()[pri:1, instance:Sanity.Cell_annotation.CellDetection_EP8@2f217633]" started-at="2024-02-13T10:35:01 IST" name="Login" finished-at="2024-02-13T10:35:32 IST" duration-ms="30318" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login -->
-        <test-method signature="table()[pri:2, instance:Sanity.Cell_annotation.CellDetection_EP8@611889f4]" started-at="2024-01-29T10:04:37 IST" name="table" finished-at="2024-01-29T10:05:36 IST" duration-ms="59383" status="PASS">
+        <test-method signature="table()[pri:2, instance:Sanity.Cell_annotation.CellDetection_EP8@2f217633]" started-at="2024-02-13T10:35:32 IST" name="table" finished-at="2024-02-13T10:35:36 IST" duration-ms="3915" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- table -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Sanity.Cell_annotation.CellDetection_EP8@611889f4]" started-at="2024-01-29T10:05:36 IST" name="tearDown" finished-at="2024-01-29T10:05:36 IST" duration-ms="123" status="PASS">
+        <test-method signature="celldetection()[pri:3, instance:Sanity.Cell_annotation.CellDetection_EP8@2f217633]" started-at="2024-02-13T10:35:36 IST" name="celldetection" finished-at="2024-02-13T10:36:02 IST" duration-ms="25964" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- celldetection -->
+        <test-method signature="Goto()[pri:4, instance:Sanity.Cell_annotation.CellDetection_EP8@2f217633]" started-at="2024-02-13T10:36:02 IST" name="Goto" finished-at="2024-02-13T10:36:15 IST" duration-ms="13156" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Goto -->
+        <test-method signature="Tileannotation()[pri:5, instance:Sanity.Cell_annotation.CellDetection_EP8@2f217633]" started-at="2024-02-13T10:36:15 IST" name="Tileannotation" finished-at="2024-02-13T10:36:39 IST" duration-ms="23886" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Tileannotation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Sanity.Cell_annotation.CellDetection_EP8@2f217633]" started-at="2024-02-13T10:36:39 IST" name="tearDown" finished-at="2024-02-13T10:36:39 IST" duration-ms="138" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
