@@ -1,41 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+<testng-results ignored="0" total="9" passed="9" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-02-13T10:35:00 IST" name="Default suite" finished-at="2024-02-13T10:36:39 IST" duration-ms="98744">
+  <suite started-at="2024-02-21T12:04:51 IST" name="Default suite" finished-at="2024-02-21T12:07:05 IST" duration-ms="134503">
     <groups>
     </groups>
-    <test started-at="2024-02-13T10:35:00 IST" name="Default test" finished-at="2024-02-13T10:36:39 IST" duration-ms="98744">
-      <class name="Sanity.Cell_annotation.CellDetection_EP8">
-        <test-method is-config="true" signature="setup()[pri:0, instance:Sanity.Cell_annotation.CellDetection_EP8@2f217633]" started-at="2024-02-13T10:35:00 IST" name="setup" finished-at="2024-02-13T10:35:01 IST" duration-ms="1338" status="PASS">
+    <test started-at="2024-02-21T12:04:51 IST" name="Default test" finished-at="2024-02-21T12:07:05 IST" duration-ms="134503">
+      <class name="Sanity.Cell_annotation.Testing">
+        <test-method is-config="true" signature="setup()[pri:0, instance:Sanity.Cell_annotation.Testing@618425b5]" started-at="2024-02-21T12:04:51 IST" name="setup" finished-at="2024-02-21T12:04:51 IST" duration-ms="685" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="Login()[pri:1, instance:Sanity.Cell_annotation.CellDetection_EP8@2f217633]" started-at="2024-02-13T10:35:01 IST" name="Login" finished-at="2024-02-13T10:35:32 IST" duration-ms="30318" status="PASS">
+        <test-method signature="login()[pri:1, instance:Sanity.Cell_annotation.Testing@618425b5]" started-at="2024-02-21T12:04:51 IST" name="login" finished-at="2024-02-21T12:05:04 IST" duration-ms="12705" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Login -->
-        <test-method signature="table()[pri:2, instance:Sanity.Cell_annotation.CellDetection_EP8@2f217633]" started-at="2024-02-13T10:35:32 IST" name="table" finished-at="2024-02-13T10:35:36 IST" duration-ms="3915" status="PASS">
+        </test-method> <!-- login -->
+        <test-method signature="series_set()[pri:2, instance:Sanity.Cell_annotation.Testing@618425b5]" started-at="2024-02-21T12:05:04 IST" name="series_set" finished-at="2024-02-21T12:05:23 IST" duration-ms="19046" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- table -->
-        <test-method signature="celldetection()[pri:3, instance:Sanity.Cell_annotation.CellDetection_EP8@2f217633]" started-at="2024-02-13T10:35:36 IST" name="celldetection" finished-at="2024-02-13T10:36:02 IST" duration-ms="25964" status="PASS">
+        </test-method> <!-- series_set -->
+        <test-method signature="cellannotation()[pri:3, instance:Sanity.Cell_annotation.Testing@618425b5]" started-at="2024-02-21T12:05:23 IST" name="cellannotation" finished-at="2024-02-21T12:05:27 IST" duration-ms="3822" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cellannotation -->
+        <test-method signature="Tileloading()[pri:4, instance:Sanity.Cell_annotation.Testing@618425b5]" started-at="2024-02-21T12:05:27 IST" name="Tileloading" finished-at="2024-02-21T12:05:36 IST" duration-ms="9021" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Tileloading -->
+        <test-method signature="centroidDetection()[pri:5, instance:Sanity.Cell_annotation.Testing@618425b5]" started-at="2024-02-21T12:05:36 IST" name="centroidDetection" finished-at="2024-02-21T12:05:52 IST" duration-ms="16481" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- centroidDetection -->
+        <test-method signature="celldetection()[pri:6, instance:Sanity.Cell_annotation.Testing@618425b5]" started-at="2024-02-21T12:05:52 IST" name="celldetection" finished-at="2024-02-21T12:06:10 IST" duration-ms="17889" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- celldetection -->
-        <test-method signature="Goto()[pri:4, instance:Sanity.Cell_annotation.CellDetection_EP8@2f217633]" started-at="2024-02-13T10:36:02 IST" name="Goto" finished-at="2024-02-13T10:36:15 IST" duration-ms="13156" status="PASS">
+        <test-method signature="Rabies()[pri:7, instance:Sanity.Cell_annotation.Testing@618425b5]" started-at="2024-02-21T12:06:10 IST" name="Rabies" finished-at="2024-02-21T12:06:33 IST" duration-ms="22806" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Goto -->
-        <test-method signature="Tileannotation()[pri:5, instance:Sanity.Cell_annotation.CellDetection_EP8@2f217633]" started-at="2024-02-13T10:36:15 IST" name="Tileannotation" finished-at="2024-02-13T10:36:39 IST" duration-ms="23886" status="PASS">
+        </test-method> <!-- Rabies -->
+        <test-method signature="Annotation()[pri:8, instance:Sanity.Cell_annotation.Testing@618425b5]" started-at="2024-02-21T12:06:33 IST" name="Annotation" finished-at="2024-02-21T12:06:46 IST" duration-ms="12969" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Tileannotation -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Sanity.Cell_annotation.CellDetection_EP8@2f217633]" started-at="2024-02-13T10:36:39 IST" name="tearDown" finished-at="2024-02-13T10:36:39 IST" duration-ms="138" status="PASS">
+        </test-method> <!-- Annotation -->
+        <test-method signature="save()[pri:9, instance:Sanity.Cell_annotation.Testing@618425b5]" started-at="2024-02-21T12:06:46 IST" name="save" finished-at="2024-02-21T12:07:04 IST" duration-ms="18041" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- Sanity.Cell_annotation.CellDetection_EP8 -->
+        </test-method> <!-- save -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:Sanity.Cell_annotation.Testing@618425b5]" started-at="2024-02-21T12:07:04 IST" name="afterTest" finished-at="2024-02-21T12:07:05 IST" duration-ms="1006" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- Sanity.Cell_annotation.Testing -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
