@@ -108,14 +108,34 @@ public class CellDetection_EP8 {
 			catch(Exception e) {
 			System.out.println("FB 40 is not clicked");
 			}
+			 String parentWindow = driver.getWindowHandle();
+	    	 try {
+	    		 WebDriverWait wait = new WebDriverWait(driver,30);
+		 		    WebElement viewericon = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//nb-icon[@nbtooltip='Viewer']")));
+		 		   viewericon.click();
+		 		    System.out.println("viewer icon is clicked successfully.");
+		 		    Thread.sleep(2000);
+		 		} catch (Exception e) {
+		 		    System.out.println(" viewer icon is not clicked: " + e.getMessage());
+		 		}
+	    	 WebDriverWait wait = new WebDriverWait(driver,30);
+	    	 wait.until(ExpectedConditions.numberOfWindowsToBe(2));
+			  Set<String> allWindows = driver.getWindowHandles();
+		        for (String window : allWindows) {
+		            if (!window.equals(parentWindow)) {
+		                driver.switchTo().window(window);
+		                break;
+		            }
+		        }
+			
 			try {
 			WebDriverWait wait9 = new WebDriverWait(driver,30);
 			WebElement table4 = wait9.until(ExpectedConditions.elementToBeClickable(By.xpath("(//span[text()='793'])[1]")));
 			table4.click();
-			System.out.println("The Number is clicked");
+			System.out.println("The section number is clicked");
 			}
 			catch(Exception e) {
-			System.out.println("The Number is not click");
+			System.out.println("The section number is not click");
 			}
 			}
 			
