@@ -79,38 +79,44 @@ public class CellDetection_EP8 {
 			}
 			
 	  @Test(priority=2)
-	  public void table() {
-		  
-			try {
-			WebDriverWait wait6 = new WebDriverWait(driver,30);
-			WebElement table1 = wait6.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[text()=' Human fetus ']")));
-			table1.click();
-			System.out.println("HumanFetus TaB is clicked");
-			}
-			catch (Exception e) {
-			System.out.println("HumanFetus TaB is not clicked");
-			}
-			try {
-			WebDriverWait wait7 = new WebDriverWait(driver,30);
-			WebElement table2 = wait7.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[text()=' Brain ']")));
-			table2.click();
-			System.out.println("Brain Tab  is clicked");
-			}
-			catch(Exception e) {
-			System.out.println("Brain Tab is not clicked");
-			}
-			try {
-			WebDriverWait wait8 = new WebDriverWait(driver,30);
-			WebElement table3 = wait8.until(ExpectedConditions.elementToBeClickable(By.xpath("//td[text()=' Fetal brain 40']")));
-			table3.click();
-			System.out.println("FB 40 is clicked");
-			}
-			catch(Exception e) {
-			System.out.println("FB 40 is not clicked");
-			}
-			 String parentWindow = driver.getWindowHandle();
+		public void series_set() throws InterruptedException
+		{
+			WebDriverWait wait = new WebDriverWait(driver, 30); 
+			driver.switchTo().defaultContent();
+	
+			
 	    	 try {
-	    		 WebDriverWait wait = new WebDriverWait(driver,30);
+	    		    WebElement Mouse = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//table[@class='cdk-table nb-tree-grid']//tr[6]")));
+	    		    Mouse.click();
+	    		    System.out.println("Human Fetus clicked successfully.");
+	    		    Thread.sleep(2000);
+	    		} catch (Exception e) {
+	    		    System.out.println("Human Fetus not clicked: " + e.getMessage());
+	    		}
+	    	
+	    	 
+	    	 try {
+	    		    WebElement Brain = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//table[@class='cdk-table nb-tree-grid']//tr[7]//td[2]")));
+	    		    Brain.click();
+	    		    System.out.println(" Brain clicked successfully.");
+	    		    Thread.sleep(2000);
+	    		} catch (Exception e) {
+	    		    System.out.println("Brain not clicked: " + e.getMessage());
+	    		}
+	    	 
+	    	 
+	    	 try {
+	 		    WebElement MTB_10 = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//table[@class='cdk-table nb-tree-grid']//tr[25]//td[3]")));
+	 		    MTB_10.click();
+	 		    System.out.println("FTB-40 clicked successfully.");
+	 		    Thread.sleep(2000);
+	 		} catch (Exception e) {
+	 		    System.out.println(" FTB-40 not clicked: " + e.getMessage());
+	 		}
+	    	 
+	    	 
+	    	 String parentWindow = driver.getWindowHandle();
+	    	 try {
 		 		    WebElement viewericon = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//nb-icon[@nbtooltip='Viewer']")));
 		 		   viewericon.click();
 		 		    System.out.println("viewer icon is clicked successfully.");
@@ -118,7 +124,7 @@ public class CellDetection_EP8 {
 		 		} catch (Exception e) {
 		 		    System.out.println(" viewer icon is not clicked: " + e.getMessage());
 		 		}
-	    	 WebDriverWait wait = new WebDriverWait(driver,30);
+	    	 
 	    	 wait.until(ExpectedConditions.numberOfWindowsToBe(2));
 			  Set<String> allWindows = driver.getWindowHandles();
 		        for (String window : allWindows) {
@@ -127,17 +133,21 @@ public class CellDetection_EP8 {
 		                break;
 		            }
 		        }
-			
-			try {
-			WebDriverWait wait9 = new WebDriverWait(driver,30);
-			WebElement table4 = wait9.until(ExpectedConditions.elementToBeClickable(By.xpath("(//span[text()='793'])[1]")));
-			table4.click();
-			System.out.println("The section number is clicked");
-			}
-			catch(Exception e) {
-			System.out.println("The section number is not click");
-			}
-			}
+	    	 
+	    	 try {
+	  		    WebElement section = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("(//span[text()='712'])[1]")));
+	  		    section.click();
+	  		    System.out.println("section clicked successfully.");
+	  		    Thread.sleep(2000);
+	  		} catch (Exception e) {
+	  		    System.out.println("section not clicked: " + e.getMessage());
+	  		}
+	    	 
+	    
+	    	 System.out.println("************************************Series set validation done********************************");
+	
+	    	 
+		}
 			
 	 @Test(priority=3)
 	  public void celldetection()
