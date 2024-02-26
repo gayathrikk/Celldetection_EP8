@@ -86,7 +86,7 @@ public class CellDetection_EP8 {
 	
 			
 	    	 try {
-	    		    WebElement Mouse = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//table[@class='cdk-table nb-tree-grid']//tr[6]")));
+	    		    WebElement Mouse = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//table[@role='grid']//tr[6]")));
 	    		    Mouse.click();
 	    		    System.out.println("Human Fetus clicked successfully.");
 	    		    Thread.sleep(2000);
@@ -96,7 +96,7 @@ public class CellDetection_EP8 {
 	    	
 	    	 
 	    	 try {
-	    		    WebElement Brain = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//table[@class='cdk-table nb-tree-grid']//tr[7]//td[2]")));
+	    		    WebElement Brain = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//table[@role='grid']//tr[7]//td[2]")));
 	    		    Brain.click();
 	    		    System.out.println(" Brain clicked successfully.");
 	    		    Thread.sleep(2000);
@@ -106,7 +106,7 @@ public class CellDetection_EP8 {
 	    	 
 	    	 
 	    	 try {
-	 		    WebElement MTB_10 = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//table[@class='cdk-table nb-tree-grid']//tr[25]//td[3]")));
+	 		    WebElement MTB_10 = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//table[@role='grid']//tr[25]//td[3]")));
 	 		    MTB_10.click();
 	 		    System.out.println("FTB-40 clicked successfully.");
 	 		    Thread.sleep(2000);
