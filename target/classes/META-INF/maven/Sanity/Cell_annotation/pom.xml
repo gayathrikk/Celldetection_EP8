@@ -70,7 +70,7 @@
           <artifactId>maven-surefire-plugin</artifactId>
           <version>3.0.0-M5</version>
           <configuration>
-            <test>Sanity.Cell_annotation.CellDetection_EP8</test>
+            <test>Sanity.Cell_annotation.Testing</test>
           </configuration>
         </plugin>
       </plugins>
