@@ -28,7 +28,7 @@ public class CellDetection_EP8 {
 			{
 				
 				  DesiredCapabilities dc = DesiredCapabilities.chrome();
-			        URL url = new URL("http://172.20.23.7:5555/wd/hub");
+			        URL url = new URL("http://172.12.20.99:4444/wd/hub");
 			        driver = new RemoteWebDriver(url, dc);
 			
 			}
@@ -59,7 +59,7 @@ public class CellDetection_EP8 {
 			Thread.sleep(4000);
 			WebDriverWait wait2 = new WebDriverWait(driver,20);
 			WebElement  emailInput = wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@type='email']")));
-			emailInput.sendKeys("teamsoftware457@gmail.com");
+			emailInput.sendKeys("softwareteam45@gmail.com");
 			System.out.println("Mail I'd is entered");
 			WebDriverWait wait3 = new WebDriverWait(driver,20);
 			WebElement  Next = wait3.until(ExpectedConditions.elementToBeClickable(By.xpath("//span[text()='Next']")));
